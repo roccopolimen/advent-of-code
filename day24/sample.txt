@@ -1,0 +1,253 @@
+
+set w i[0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+set y w
+set y y+4
+
+set z y
+set w i[1]
+
+set x z
+set x x%26
+
+set x x+15
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+11
+set y y*x
+set z z+y
+set w i[2]
+
+set x z
+set x x%26
+
+set x x+11
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+7
+set y y*x
+set z z+y
+set w i[3]
+
+set x z
+set x x%26
+set z z/26
+set x x-14
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+2
+set y y*x
+set z z+y
+set w i[4]
+
+set x z
+set x x%26
+
+set x x+12
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+11
+set y y*x
+set z z+y
+set w i[5]
+
+set x z
+set x x%26
+set z z/26
+set x x-10
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+13
+set y y*x
+set z z+y
+set w i[6]
+
+set x z
+set x x%26
+
+set x x+11
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+9
+set y y*x
+set z z+y
+set w i[7]
+
+set x z
+set x x%26
+
+set x x+13
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+12
+set y y*x
+set z z+y
+set w i[8]
+
+set x z
+set x x%26
+set z z/26
+set x x-7
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+6
+set y y*x
+set z z+y
+set w i[9]
+
+set x z
+set x x%26
+
+set x x+10
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+2
+set y y*x
+set z z+y
+set w i[10]
+
+set x z
+set x x%26
+set z z/26
+set x x-2
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+11
+set y y*x
+set z z+y
+set w i[11]
+
+set x z
+set x x%26
+set z z/26
+set x x-1
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+12
+set y y*x
+set z z+y
+set w i[12]
+
+set x z
+set x x%26
+set z z/26
+set x x-4
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+3
+set y y*x
+set z z+y
+set w i[13]
+
+set x z
+set x x%26
+set z z/26
+set x x-12
+set x x!=w
+
+
+set y 25
+set y y*x
+set y y+1
+set z z*y
+
+set y w
+set y y+13
+set y y*x
+set z z+y
