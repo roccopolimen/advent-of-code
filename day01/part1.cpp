@@ -1,17 +1,24 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-    int n, prev, ct = 0;
-    cin >> n >> prev;
-    for(int i = 1; i < n; ++i) {
-        int cur; cin >> cur;
-        if(cur > prev) ++ct;
-        prev = cur;
+    int n;
+    string line;
+    cin >> n;
+    getline(cin, line); // consume newline
+
+    long long best = 0;
+    for(int i = 0; i < n; i++) {
+        getline(cin, line);
+        istringstream iss(line);
+        int curr = 0, num;
+        while(iss >> num) curr += num;
+        if(curr > best) best = curr;
     }
-    cout << ct << "\n";
+
+    cout << best << endl;
     return 0;
 }

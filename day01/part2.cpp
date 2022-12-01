@@ -1,20 +1,31 @@
-#include <iostream>
-#include <queue>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-    queue<int> window;
-    int n, a, b, c; cin >> n >> a >> b >> c;
-    window.push(a); window.push(b); window.push(c);
-    int ct = 0;
-    for(int i = 3; i < n; ++i) {
-        int cur; cin >> cur;
-        if(cur > window.front()) ++ct;
-        window.pop(); window.push(cur);
+    int n;
+    string line;
+    cin >> n;
+    getline(cin, line); // consume newline
+
+    priority_queue<int, vector<int>, greater<int>> pq;
+    for(int i = 0; i < n; i++) {
+        getline(cin, line);
+        istringstream iss(line);
+        int curr = 0, num;
+        while(iss >> num) curr += num;
+        pq.push(curr);
+        if(pq.size() > 3) pq.pop();
     }
-    cout << ct << "\n";
+
+    // sum the elements in the priority queue
+    long long best = 0;
+    while(!pq.empty()) {
+        best += pq.top();
+        pq.pop();
+    }
+    cout << best << '\n';
     return 0;
 }
