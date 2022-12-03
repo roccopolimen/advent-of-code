@@ -15,13 +15,13 @@ int main() {
     long long ans =  0;
     for(const auto &s: v) {
         unordered_set<char> st;
-        for(int i = 0, halflen = s.size() / 2; i < halflen; i++)
-            st.insert(s[i]);
-        for(int i = s.size()/2; i < s.size(); i++)
+        for(int i = 0, halflen = s.size() / 2; i < halflen; i++) st.insert(s[i]);
+        for(int i = s.size()/2; i < s.size(); i++) {
             if(st.find(s[i]) != st.end()) {
                 ans += (s[i] >= 'a' ? s[i] - 'a' + 1 : s[i] - 'A' + 27);
                 break;
             }
+        }
     }
 
     cout << ans << '\n';
